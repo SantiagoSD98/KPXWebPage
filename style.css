@@ -63,11 +63,19 @@
     padding: 2rem 4rem;
     background-color: #ffffff4f;
     position: absolute;
+    width: 35%;
 }
 
+.carousel {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
 .slide1 {
-    top: 55%;
-    left: 15%;
+    top: 10%;
+    left: 10%;
 }
 
 .slide2 {
@@ -76,8 +84,8 @@
 }
 
 .slide3 {
-    top: 45%;
-    left: 15%;
+    top: 65%;
+    left: 10%;
 }
 
 .item-title {
@@ -206,7 +214,6 @@
 
 
 .Main_First-Header--InfoImg {
-    background-image: url("./Assets/nat-8.jpg");
     height: 15rem;
     width: 15rem;
     background-size: cover;
@@ -313,15 +320,15 @@
 
 
 .Card_Front-Face-1 {
-    background-image: linear-gradient(to right bottom, rgba(181, 181, 181, 0.55), rgba(0, 0, 0, 0.67)), url("./Assets/nat-1-large.jpg");
+    background-image: linear-gradient(to right bottom, rgba(181, 181, 181, 0.55), rgba(0, 0, 0, 0.67)), url("Assets/Card-1.jpg");
 }
 
 .Card_Front-Face-2 {
-    background-image: linear-gradient(to right bottom, rgba(181, 181, 181, 0.55), rgba(0, 0, 0, 0.67)), url("./Assets/nat-2-large.jpg");
+    background-image: linear-gradient(to right bottom, rgba(181, 181, 181, 0.55), rgba(0, 0, 0, 0.67)), url("Assets/Card-2.jpg");
 }
 
 .Card_Front-Face-3 {
-    background-image: linear-gradient(to right bottom, rgba(181, 181, 181, 0.55), rgba(0, 0, 0, 0.67)), url("./Assets/nat-3-large.jpg");
+    background-image: linear-gradient(to right bottom, rgba(181, 181, 181, 0.55), rgba(0, 0, 0, 0.67)), url("Assets/Card-3.jpg");
 }
 
 .Card_Back-Face-1 {
@@ -341,7 +348,7 @@
 
 
 .Main_Second-Container {
-    background-image: linear-gradient(to right bottom, rgba(94, 95, 94, 0.8), rgba(0, 0, 0, 0.42)), url("./Assets/Parallax.png");
+    background-image: linear-gradient(to right bottom, rgba(94, 95, 94, 0.8), rgba(0, 0, 0, 0.42)), url("./Assets/Parallax.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -574,6 +581,7 @@
 
 .Main_Third-Info--Img img{
     width: 100%;
+
     transition: all .7s;
 }
 
@@ -596,7 +604,7 @@
 
 
 .Main_Fourth {
-    background-image: linear-gradient(to right bottom, rgba(94, 95, 94, 0.8), rgba(0, 0, 0, 0.42)), url("./Assets/Business1.jpg");
+    background-image: linear-gradient(to right bottom, rgba(94, 95, 94, 0.8), rgba(0, 0, 0, 0.42)), url("./Assets/LastBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -705,6 +713,7 @@
 
 .Footer_Info-ListContainer {
     width: 20%;
+    margin: 0 1.5rem;
 }
 
 .Footer_Info-ListTitle {
@@ -731,19 +740,342 @@
 /*MEDIA QUERIES - RESPONSIVE DESIGN*/
 
 @media only screen and (max-width: 1200px) {
-    .Main_First {
-        background-color: red !important;
+    /*HEADER 1200PX*/
+    .Header_Menu-NavItems {
+        padding: 2rem 2rem 3rem;
+    }
+
+    .item-container {
+        padding: 1rem 2rem;
+        width: 75%;
+    }
+
+    .slide1 {
+        top: 45%;
+        left: 11%;
+    }
+
+    .slide2 {
+        top: 25%;
+        left: 11%;
+    }
+
+    .slide3 {
+        top: 55%;
+        left: 11%;
+    }
+
+    .item-title {
+        font-size: 28px;
+    }
+
+    /*FIRST SECTION 1200PX*/
+
+    .Main_Third-Info {
+        display: block;
+    }
+
+    .Main_Third-Info--Text {
+        width: 100%;
+    }
+
+    .Main_Third-Info--Img {
+        width: 100%;
+        border-radius: 4px;
+        margin: 1rem 0;
+    }
+
+    .Main_First-CardContainer {
+        height: 40rem;
+        width: 30%;
+    }
+
+    /*SECOND SECTION 1200PX*/
+    .Main_Second-Body--Cards {
+        width: 30%;
+        min-height: 22.5rem;
+    }
+
+    /*THIRD SECTION 1200PX*/
+    .Main_Third-Testimonials .Main_Third-Card {
+        width: 30%;
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card::before {
+        left: 0;
+        top: -10px;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card .Third_Card-Content .image {
+        width: 45%;
+    }
+
+    .Testimonials_Image {
+        width: 100%;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card .Third_Card-Content p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 1.5rem;
+    }
+
+    /*FOURTH SECTION 1200PX*/
+    .Main_Fourth-Body--Cards {
+        width: 20%;
+        min-height: 20rem;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .Main_First {
-        background-color: green !important;
+    /*HEADER 900PX*/
+    .Header_Menu-NavItems {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .item-container {
+        display: none;
+    }
+
+    /*FIRST SECTION 900PX*/
+
+    .Main_First-Header--Title {
+        font-size: 4rem;
+    }
+
+    .Main_Third-Info {
+        display: block;
+    }
+
+    .Main_Third-Info--Text {
+        width: 100%;
+    }
+
+    .Main_Third-Info--Img {
+        width: 100%;
+        border-radius: 4px;
+        margin: 1rem 0;
+    }
+
+    .Main_First-Info {
+        display: block;
+    }
+
+    .Main_First-CardContainer {
+        width: 70%;
+        height: auto;
+        margin: 0 auto 2.5rem;
+        overflow: visible;
+    }
+
+    .Main_First-CardHeader {
+        padding: 0.5rem;
+    }
+
+    .Card {
+        position: static;
+        transition: none;
+    }
+
+    .Side {
+        position: static;
+        backface-visibility: visible;
+        overflow: visible;
+    }
+
+    .Back {
+        transform: none;
+    }
+
+    .Card:hover .Front {
+        transform: none;
+    }
+
+    .Card:hover .Back {
+        transform: none;
+    }
+
+
+    /*SECOND SECTION 900PX*/
+    .Main_Second-Body--CardsContainer {
+        display: block;
+        padding: 0;
+    }
+
+    .Main_Second-Body--Cards {
+        width: 65%;
+        margin: 0 auto 2.5rem;
+        transition: none;
+    }
+
+    .Main_Second-Body--CardsSlide {
+        top: 0;
+        opacity: 1;
+    }
+
+    .CardSlide_Title {
+        margin-bottom: 1.5rem;
+    }
+
+    .Main_Second-Paragraphs {
+        flex-direction: column;
+    }
+
+    .Main_Second-TextContainer {
+        width: 100%;
+    }
+
+    .Main_Second-TextParagraph {
+        text-align: justify;
+    }
+
+    /*THIRD SECTION 1200PX*/
+    .Main_Third-Testimonials {
+        display: block;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card {
+        width: 60%;
+        margin: 2.5rem auto;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card::before {
+        left: 10px;
+        top: -10px;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card .Third_Card-Content .image {
+        width: 45%;
+    }
+
+    .Testimonials_Image {
+        width: 100%;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card .Third_Card-Content p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 1.5rem 0.5rem;
+    }
+
+    .Third-Info--Text {
+        text-align: justify;
+    }
+
+    /*FOURTH SECTION 900PX*/
+    .Main_Fourth-Body--CardsContainer {
+        display: block;
+    }
+
+    .Main_Fourth-Body--Cards {
+        width: 80%;
+        margin: 2rem auto;
+        min-height: 20rem;
+    }
+
+    .Fourth-Body--TextParagraph {
+        text-align: justify;
+    }
+
+    /*FOOTER SECTION 900PX*/
+    .Footer_Info-TextContainer {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .Footer_Info-ListContainer {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    /*HEADER 600PX*/
+
+    .Header_Menu-NavItems {
+        padding: 1rem 0.5rem 3rem;
+        font-size: 1rem;
+    }
+
+    /*FIRST SECTION 600PX*/
+
     .Main_First {
-        background-color: lightblue !important;
+        padding: 1rem;
+    }
+
+    .Main_First-Header--Title {
+        font-size: 3rem;
+    }
+
+    .Main_Third-Info {
+        margin: 0;
+    }
+
+    .Main_Third-Info--Text {
+        width: 100%;
+    }
+
+    .Main_Third-Info--Img {
+        display: none;
+    }
+
+    .Main_First-CardContainer {
+        width: 100%;
+    }
+
+    .Card-ListItem {
+        padding: 1rem 1.5rem;
+        text-align: center;
+    }
+
+    /*SECOND SECTION 600PX*/
+
+    .Main_Second-Header--Title {
+        font-size: 3rem;
+    }
+
+    .Main_Second-Body--Cards {
+        width: 90%;
+        min-height: 15.5rem;
+    }
+
+    .CardSlide_Title {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+
+    /*THIRD SECTION 600PX*/
+
+    .Main_Third {
+        padding: 1rem;
+    }
+
+    .Main_Third-Header {
+        margin-bottom: 3rem;
+    }
+
+    .Main_Third-Header--Title {
+        font-size: 3rem;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card {
+        width: 80%;
+    }
+
+    .Main_Third-Testimonials .Main_Third-Card .Third_Card-Content p {
+        font-size: 13px;
+    }
+
+    /*FOURTH SECTION 600PX*/
+
+    .Main_Fourth-Header--Title {
+        font-size: 3rem;
+    }
+
+    /*FOOTER 600PX*/
+
+    .Footer_Info {
+        width: 85%;
     }
 }
